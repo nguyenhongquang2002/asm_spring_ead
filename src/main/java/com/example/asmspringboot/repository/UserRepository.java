@@ -1,2 +1,12 @@
-package com.example.asmspringboot.repository;public interface UserRepository {
+package com.example.asmspringboot.repository;
+
+import com.example.asmspringboot.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findUserByUsername(String username);
 }

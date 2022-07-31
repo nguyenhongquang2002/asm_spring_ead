@@ -1,4 +1,4 @@
-package aptech.fpt.t2010aorderdemo.entity.base;
+package com.example.asmspringboot.entity.base;
 
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;

@@ -1,4 +1,17 @@
 package com.example.asmspringboot.entity.dto;
 
-public class ShoppingCartDto {
+import lombok.*;
+
+import javax.validation.constraints.NotEmpty;
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserLoginDto {
+    @NotEmpty(message = "Username cannot be empty")
+    private String username;
+    @NotEmpty(message = "Password cannot be empty")
+    private String password;
 }
